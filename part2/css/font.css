@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Cormorant';
+    font-weight: 300;
+    src: url(../assets/font/corm-lig.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Cormorant';
+    font-weight: 400;
+    src: url(../assets/font/corm-reg.woff2) format("truetype");
+}
+@font-face {
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 400;
+    src: url(../assets/font/zen-reg.woff2) format("truetype");
+}
+@font-face {
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 500;
+    src: url(../assets/font/zen-med.woff2) format("truetype");
+}
+@font-face {
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 700;
+    src: url(../assets/font/zen-bold.woff2) format("truetype");
+}
+@font-face {
+    font-family: 'Shippori Mincho';
+    font-weight: 700;
+    src: url(../assets/font/sipp-bold.woff2) format("truetype");
+}

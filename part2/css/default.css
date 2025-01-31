@@ -1,0 +1,585 @@
+@charset "utf-8";
+@import url(font.css);
+
+/* ===================================
+       　　　　　reset
+======================================*/
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-text-size-adjust: 100%;    /* 勝手に文字が拡大されるのを防ぐ */
+    /* 以下、案件ごとに適宜変更 */
+    color: #fff;
+    background-color: #FFFFFF;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, table, th, td, ul, li, ol, dl, dt, dd, form, p {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    list-style-type: none;
+    line-height: 1;
+}
+
+input, textArea, select, button {
+    appearance: none;
+    -webkit-appearance: none;    /* iOS系のスタイルを外す */
+}
+
+button {
+    cursor: pointer;
+}
+
+figure {
+    margin: 0px;
+}
+
+img, iframe {
+    width: 100%;
+    height: auto;
+    vertical-align: top;    /* 意図しない余白の削除 */
+}
+
+table {
+    border-collapse: collapse;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 1024px以上hover */
+@media (min-width: 1024px) {
+    a {
+        transition: opacity 0.3s;
+        cursor: pointer;
+    }
+    a:hover {
+        opacity: 0.5;
+    }
+    .logo-rot {
+        transition: transform 500ms ease ;
+        width: 150px;
+        height: 71px; 
+      }
+      .logo-rot:hover {
+        transform: rotate(360deg);
+        opacity: 0.5;
+      }
+      .logo-rot2 {
+          transition: transform 500ms ease;
+          width: 150px;
+          height: 71px; 
+        }
+      .logo-rot2:hover {
+        transform: rotate(720deg);
+      }
+      .logo-only {
+        width: 150px;
+        height: 71px;
+      }
+}
+
+/* 
+    ここまでリセット 
+*/
+
+html {
+    font-size: 100%;
+}
+body {
+    color: black;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+li {
+    list-style: none;
+}
+h2{
+    font-size: 64px;
+}
+.ham {
+    display: none;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 10px;
+}
+#header span {
+    font-size: 14px;
+    color: #B90000;
+}
+#header img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#header nav{
+    text-align: right;
+}
+#header nav ul{
+    margin-top: 20px;
+}
+#header nav ul:nth-child(n+2){
+    display: none;
+}
+#header nav ul li{
+    color: #969591;
+    font-weight: bold;
+    list-style: none;
+    display: inline-block;
+    border-right: 1px solid;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+#header nav ul li:last-of-type {
+    border-right: none;
+}
+
+#contact {
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+}
+#contact p {
+    width: 1200px;
+    height: 343px;
+    font-size: 88px;
+    color: #333333;
+    font-family: "Cormorant";
+    position: absolute;
+    padding-top: 35px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, .5);
+}
+#contact p:nth-child(n+2) {
+    margin-top: 85px;
+    height: 30px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 20px;
+    color: #B90000;
+    background-color: transparent;
+    box-shadow: none;
+}
+#contact p:nth-child(3) {
+    transform: translateX(300px);
+}
+#contact ul {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 1200px;
+    height: 120px;
+    font-size: 20px;
+    font-weight: bold;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transform: translate(0px,-300px);
+    align-items: stretch;
+}
+#contact ul li {
+    font-weight: bold;
+    border-right: 1px solid #CCCCCC;
+    text-align: center;
+    padding-top: 30px;
+}
+#contact ul li:last-of-type {
+    border-right: none;
+}
+#contact ul li span {
+    font-size: 20px;
+    background-color: transparent;
+    color: #000000;
+}
+#contact ul li span:nth-child(2) {
+    font-size: 40px;
+}
+
+#contact ul li:nth-child(2) {
+    display: grid;
+    text-align: left;
+    padding-left: 150px;
+    grid-template-rows: auto 13px;
+    align-content: baseline;
+    grid-auto-columns: max-content;
+}
+#contact ul li span a {
+    font-size: 13px;
+    text-align: left;
+    border-bottom:1px solid #969591;    
+    padding-bottom: 7.5px;
+}
+#contact ul li span a img {
+    margin-left: 105px;
+    width: 12px;
+    height: 12px;
+    margin-top: 7.5px;
+}
+#contact img {
+    width: 100%;
+    height: 380px;
+    margin-top: 80px;
+}
+
+#footer {
+    background: linear-gradient(to bottom, #FFF 0%, #969591 50%, #969591 50%, #969591 100%);
+}
+
+#footer > p{
+    font-size: 32px;
+    text-align: center;
+}
+.oisi {
+    height: 234px;
+    position: relative;
+    background: #969591;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    font-weight: 500;
+}
+.oisi span {
+    height: 234px;
+    font-family: "Shippori Mincho", serif;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 150px 50px  auto;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #FFF;
+    text-align: left;
+    color: #FFFFFF;
+    align-items: center;
+    column-gap: 0%;
+    font-weight: bold;
+}
+.logo .addandtel {
+    grid-column: 3/3;
+}
+.teland {
+    padding-right: 20px;
+}
+.logo span a {
+    padding-left: 20px;
+}
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.nav2 {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #969591;
+    margin-top: 27px;
+    padding-bottom: 67px;
+
+}
+.nav2 ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto 1fr;
+    justify-content: flex-start;
+}
+.nav2 ul li{
+    padding-right: 20px;
+    font-weight: 500;
+}
+.nav2 ul li:last-of-type{
+    justify-items: end;
+    text-align: right;
+    right: 0;
+    padding-right: 0;
+}
+
+/* 
+ここから下はwidth 1271px以下用 
+*/
+
+@media (max-width: 1271px) {
+    #header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #header img {
+        width: 112px;
+        height: 53px;
+    }
+    #footer {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact p {
+        width: 353px;
+        height: 401px;
+        font-size: 40px;
+        padding-top: 41px;
+    }
+    #contact p:nth-child(2) {
+        margin-top: 44px;
+        font-size: 13px;
+    }
+    #contact p:nth-child(3) {
+        width: 120px;
+        border-top: 1px solid #CCCCCC;
+        transform: translateX(0px);
+        border-radius: 0px 0px 0px 0px / 0px 0px 0px 0px;
+        margin-top: 20px;
+    }
+    #contact img {
+        height: 393px;
+        margin-top: 61px;
+    }
+    #contact ul {
+        height: 200px;
+        width: 353px;
+        grid-template-columns: auto;
+        grid-template-rows: 50% 50%;
+        transform: translate(0px,-335px);
+    }
+    #contact ul li {
+        border-right: none;
+    }
+    #contact ul li:last-of-type {
+        justify-content: center;
+        padding-left: 0px;
+    }
+    #contact ul li:nth-child(2) {
+        font-size: 20px;
+
+    }
+    #contact ul li span:nth-child(2) {
+        font-size: 34px;
+    }
+    .oisi {
+        display: block;
+        height: 151px;
+        padding-top:10px;
+        margin: 0px 20px 0px 20px;
+        border-bottom: 1px solid #fff;
+    }
+    .oisi span {
+        height: 30px;
+        font-size: 20px;
+        padding-top: 31px;
+    }
+    .logo {
+        order: 1;
+        margin: 0px 20px 45px 20px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 128px;
+        /* transform: translateY(150px); */
+    }
+    .nav2 {
+        margin: 0px 20px 0px 20px;
+        padding-bottom: 25px;
+    }
+    .nav2 ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 50px 50px 50px;
+        align-items: end;
+    } 
+    .nav2 ul li {
+        padding-left: 0px;
+    }
+    .nav2 ul li:last-of-type {
+        font-size: 12px;
+        text-align: center;
+        transform: translateY(180px);
+    }
+    
+    /* 
+    hamburger menu
+    */
+      
+    header {
+    position: relative;
+    }
+    
+    .span-container,
+    .checkbox {
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    top: 45px;
+    transform: translateY(-50%);
+    position: fixed;
+    }
+
+    .checkbox {
+    opacity: 0;
+    z-index: 100;
+    }
+
+    .span-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    z-index: 90;
+    }
+    
+    /* hamburger border */
+    
+    .span-container span {
+    width: 100%;
+    height: 3px;
+    background: #707070;
+
+    transition: all 250ms ease-out;
+    transform-origin: 0 0;
+    }
+    
+    .checkbox:checked ~ .span-container span:nth-last-child(1) {
+        transform: rotate(-45deg) translate(-1px, 0px);
+    }
+    
+    .checkbox:checked ~ .span-container span:nth-last-child(2) {
+        transform: rotate(0deg) scale(0.2, 0.2);
+        opacity: 0;
+    }
+    
+    .checkbox:checked ~ .span-container span:nth-last-child(3) {
+        transform: rotate(45deg) translate(0px, -1px);
+    }
+    
+    .nav-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    background: #969591;
+    transition: all 250ms ease-out;
+    transform: translateX(100%);
+    }
+    .nav-container a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        margin: 1rem auto;
+    }
+    #header nav ul:nth-child(n+2) {
+        display: grid;
+    }
+    #header span {
+        color: #FFFFFF;
+    }
+    #header nav {
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+    }
+    #header nav ul {
+        order: 2;
+        margin: 0px 20px 0px 20px;
+        display: grid;
+        justify-items: start;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 50px 50px 50px;
+        align-items: end;
+    }
+    #header nav ul:first-of-type {
+        border-bottom: 1px solid #FFFFFF;
+        border-top:1px solid #FFFFFF;
+        padding-bottom: 25px;
+    }
+    #header nav ul li {
+        border-right: none;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: #FFF;
+    }
+    #header nav ul:nth-child(2) {
+        order: 1;
+        display: grid;
+        grid-template-rows: 80px 160px;
+        align-items: center;
+    }
+    #header .ham li:nth-child(2){
+        display: grid;
+        grid-template-columns: 353px;
+        grid-template-rows: 30px 30px 30px;
+        justify-items: center;
+    }
+    #header .ham li span{
+        font-size: 20px;
+        font-family: "Shippori Mincho", serif;
+        height: 90px;
+    }
+    #header .map {
+        order: 3;
+        grid-template-rows: 35px 18px 205px 25px;
+    }
+    #header .map iframe {
+        width: 353px;
+        height: 200px;
+    }
+    #header .map li:nth-child(4) span:nth-child(2) {
+        padding-left: 30px;
+    }
+}
+      
+.checkbox:checked ~ .nav-container {
+transform: translateX(0%);
+}
+/* ここまでハンバーガー */
+
+/* 
+    ここまでデフォルト
+*/

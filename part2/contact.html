@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300..700&family=Shippori+Mincho:wght@700&family=Zen+Kaku+Gothic+Antique:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <input type="checkbox" class="checkbox">
+            <div class="span-container">
+        <!-- ハンバーガーメニューの線 -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- /ハンバーガーメニューの線 -->
+         </div>
+                <nav class="nav-container">
+                    <ul class="menu">
+                        <li><a href="index.html">TOP</a></li>
+                        <li><a href="item.html">ITEM</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="contact.html"><span>CONTACT</span></a></li>
+                    </ul>
+                    <ul class="ham">
+                        <li><a href="index.html"><img src="img/logo2.svg" alt="logo"></a></li>
+                        <li><span>美味しさでつながる、</span><span>あなたとの幸せな時間を</span><span>これからも一緒に。</span></li>
+                    </ul>
+                    <ul class="map">
+                        <li><span>新潟佐渡本店</span></li>
+                        <li><span>〒952-1211 新潟県佐渡市中興乙1427</span></li>
+                        <li><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1869.0269607860337!2d138.35983415975065!3d38.016408654620356!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff366cc48a90cf9%3A0xdc2f1f3ebb1f39c4!2zdGFuZUNSRUFUSVZF77yI5qCq77yJ!5e0!3m2!1sja!2sjp!4v1729647054173!5m2!1sja!2sjp" width="353" height="199" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+                        <li><span>TEL：0259-67-7572</span><span>FAX：0259-67-7574</span></li>
+                    </ul>
+                </nav>
+    </header>
+
+    <main>
+        <section class="main-contact">
+            <h1 class="item-title">C<span>O</span>NTACT</h1>
+            <h2 class="sub-title">お問い合わせ</h2>
+            <h2 class="pan"><a href="index.html">HOME</a> / お問い合わせ</h2>
+            <form action="/form.html" method="post">
+            <div class="text-contact">
+                <ul>
+                    <li><span>当店へのお問い合わせ、または商品へのご希望はこちらよりお送りください。<br>
+                    ご返信まで3営業日ほどいただく場合がございますので、予めご了承ください。</span></li>
+                    <li><span>お名前</span><span>必須</span></li>
+                    <li><input type="text" name="name" placeholder="お名前を入力してください" required></li>
+                    <li><span>メールアドレス</span><span>必須</span></li>
+                    <li><input type="email" name="email" placeholder="メールアドレスを入力してください" required></li>
+                    <li><span>お問い合わせ内容</span><span>必須</span></li>
+                    <li><textarea name="inq" rows="20" cols="40" placeholder="お問い合わせ内容を入力してください" required="textarea"></textarea></li>
+                </ul>
+                <div class="privacy">
+                    <p class="pri-head">プライバシーポリシー</p>
+                    <p class="pri-num">１.テキストテキストテキスト</p>
+                    <p class="pri-main">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p>
+                    <p class="pri-num">２.テキストテキストテキスト</p>
+                    <p class="pri-main">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p>
+                    <p class="pri-num">３.テキストテキストテキスト</p>
+                    <p class="pri-main">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p>
+                    <p class="pri-head">プライバシーポリシー</p>
+                    <p class="pri-num">１.テキストテキストテキスト</p>
+                    <p class="pri-main">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p>
+                    <p class="pri-num">２.テキストテキストテキスト</p>
+                    <p class="pri-main">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p>
+                    <p class="pri-num">３.テキストテキストテキスト</p>
+                    <p class="pri-main">テキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキスト</p>
+                </div>
+                <div class="pri-button"><input type="submit" class="prib" value="プライバシーポリシーに同意して送信する" disabled>
+                    <input type ="image" name="submit" class="button-pic" src="img/pri-poli.svg" alt="" disabled>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/scroll-end.js"></script>
+
+    <footer id="footer">
+        <div id="contact">
+            <p>CONTACT</p>
+            <p>お問い合わせ</p>
+            <img src="img/craftmanship_img1.png" alt="img1.png">
+            <ul>
+                <li><span>お電話でのお問い合わせ<br>TEL.</span><span>0259-67-7572</span><p></p></li>
+                <li><span>WEBからのお問い合わせ</span><br><span><a href="contact.html">メールフォームへ<img src="img/link.svg" alt="mail link"></a></span></li>
+            </ul>
+        </div>
+        <div class="oisi">
+            <span>美味しさでつながる、</span><span>あなたとの幸せな時間を</span><span>これからも一緒に。</span>
+        </div>
+            <div class="logo">
+                <a href="index.html"><img src="img/logo2.svg" alt="logo2"></a>
+                <span>〒952-1211 新潟県佐渡市中興乙1427<a href="#google.map">Google Map</a><br><br>
+                TEL:0259-67-7572　　　FAX:0259-67-7574</span>
+            </div>
+            <div class="nav2">
+                <ul>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="item.html">ITEM</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li>Copyright ©taneCREATIVE CO.,LTD All right reserved.</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,181 @@
+
+.main-contact {
+    width: 1200px;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: -30px;
+    color: #333333;
+}
+.main-contact span {
+    color: #B90000;
+    font-size: 88px;
+}
+.main-contact .item-title {
+    font-family: "Cormorant";
+    font-size: 88px;
+    text-align: left;
+    padding-top: 175px;
+}
+.main-contact .sub-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #B90000;
+    text-align: left;
+}
+.main-contact .pan {
+    font-size: 14px;
+    color: #333333;
+    text-align: right;
+    padding-bottom: 100px;
+    font-weight: 500;
+}
+.main-contact .text-contact {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 105px 40px 50px 37px 40px 50 37px 40px 200px ; */
+}
+.main-contact .text-contact ul {
+    display: grid;
+    grid-template-rows: 105px 40px 87px 40px 87px 40px 200px ;
+}
+.main-contact .text-contact ul li:nth-child(1) span {
+    font-family: "游ゴシック";
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 25px;
+}
+.main-contact .text-contact ul li:nth-child(n+2):nth-child(even) {
+    display: grid;
+    grid-template-columns: 165px 40px;
+}
+.main-contact .text-contact ul li:nth-child(n+2) span:nth-of-type(odd) {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+.main-contact .text-contact ul li:nth-child(n+2) span:nth-of-type(even) {
+    font-family: "游ゴシック";
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    height: 22px;
+    background-color: #B90000;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.main-contact .text-contact ul li input {
+    border: 1px solid #CCCCCC;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 100%;
+    letter-spacing: 0.1em;
+    padding-left: 20px;
+}
+.main-contact .text-contact ul li textarea {
+    width: 1000px;
+    height: 200px;
+    resize: none;
+    border: 1px solid #CCCCCC;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+    padding: 12px 0px 0px 20px;
+}
+.privacy {
+    width: 800px;
+    height: 200px;
+    display: grid;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    margin: 70px 100px 0px 100px;
+    padding: 0px 30px 0px 30px;
+    overflow-y: scroll;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: default;
+}
+.privacy .pri-head {
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    border-bottom: 1px solid #CCCCCC;
+    display: grid;
+    justify-content: center;
+}
+.privacy .pri-num {
+    padding-bottom: 11px;
+}
+.privacy p:nth-child(2){
+    margin-top: 17px;
+}
+.privacy .pri-main {
+    margin: 0px 0px 12px 11px;
+    height: 50px;
+    line-height: normal;
+}
+.pri-button {
+    display: grid;
+    position: relative;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    text-align: center;
+    height: 54px;
+    justify-items: center;
+    margin: 35px 0px 105px 0px;
+    cursor: default;
+}
+.pri-button input {
+    width: 435px;
+    height: 54px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #969591;
+    background-color: #969591;
+    border-radius: 10px;
+    align-content: center;
+}
+.pri-button input[enabled] {
+    background-color: #000000;
+    color: #B90000;
+}
+.pri-button input[disabled] {
+    color: #fff;
+    background-color: #969591;
+}
+.pri-button img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    align-self: center;
+    right: 310px;
+    bottom: 20px;
+}
+
+.pri-button .button-pic { 
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    align-self: center;
+    right: 310px;
+    bottom: 20px;
+}
+
+@media screen {
+    
+}

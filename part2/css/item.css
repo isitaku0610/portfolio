@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+#itemcontent {
+    width: 1200px;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: -30px;
+    color: #333333;
+}
+#itemcontent span {
+    color: #B90000;
+    font-size: 88px;
+}
+#itemcontent .item-title {
+    font-family: "Cormorant";
+    font-size: 88px;
+    text-align: left;
+    padding-top: 175px;
+}
+#itemcontent .sub-title{
+    font-size: 20px;
+    color: #B90000;
+    text-align: left;
+}
+#itemcontent .pan {
+    font-size: 14px;
+    color: #333333;
+    text-align: right;
+    padding-bottom: 100px;
+    font-weight: 500;
+}
+
+#itemcontent .btn-select {
+    height: 50px;
+    display: grid;
+    position: relative;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    grid-template-columns: 380px 380px 380px;
+    grid-template-rows: 50px;
+    padding-bottom: 110px;
+    justify-content: space-around;
+    column-gap: 2.5%;
+}
+#itemcontent .btn-select p {
+    width: 380px;
+    height: 50px;
+    border: 1px solid #CCCCCC;
+}
+#itemcontent .btn-select p select {
+    width: 380px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    background-image: url("img/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: right 12px center;
+}
+
+#itemcontent .content-title {
+    font-size: 16px;
+}
+
+#itemcontent ul{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    justify-content: space-around;
+    column-gap: 2%;
+    margin: 0 auto;
+    padding-left: 0px;
+}
+#itemcontent ul li {
+    font-weight: 500;
+}
+#itemcontent ul li img {
+    padding-bottom: 15px;
+}
+
+#itemcontent ul li:nth-child(n+5) {
+    padding-top: 35px;
+}
+#itemcontent ul li:nth-child(n+9) {
+    padding-top: 35px;
+    padding-bottom: 100px;
+}
+
+#itemcontent .page {
+    font-size: 20px;
+    height: 30px;
+    display: grid;
+    position: relative;
+    left: 0;
+    right: 0;
+    grid-template-columns: 30px 30px 30px;
+    grid-template-rows: 30px;
+    column-gap: 15px;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 75px;
+    transform: translateY(-30px);
+}
+#itemcontent .page button:first-child {
+    background-color: #B90000;
+    color: #FFFFFF;
+}
+#itemcontent .page button {
+    border: 1px solid #B90000;
+    color: #B90000;
+}
+/* 
+ここから下はwidth 1271px以下用 
+*/
+
+@media (max-width: 767px) {
+
+    #itemcontent {
+        width: 100%;
+        position: relative;
+        right: 0;
+        left: 0;
+        margin: auto;
+        color: #333333;
+    }
+    #itemcontent span {
+        color: #B90000;
+        font-size: 44px;
+    }
+    #itemcontent .item-title {
+        font-family: "Cormorant";
+        font-size: 44px;
+        text-align: left;
+        padding-top: 60px;
+    }
+    #itemcontent .sub-title {
+        font-size: 15px;
+    }
+
+    #itemcontent .btn-select {
+        grid-template-columns: 353px;
+        grid-template-rows: 50px 50px 50px;
+        padding-bottom: 230px;
+        row-gap: 20px;
+    }
+    #itemcontent .btn-select p {
+        width: 353px;
+    }
+    #itemcontent .btn-select p select {
+        width: 353px;
+    }
+    #itemcontent ul {
+        width: 353px;
+        grid-template-columns: 167px 167px;
+        justify-content: space-between;
+    }
+    #itemcontent ul li {
+        padding-bottom: 28px;
+    }
+    #itemcontent ul li:nth-child(n+5) {
+        padding-top: 0px;
+    }
+    #itemcontent ul li:nth-child(n+9) {
+        padding-bottom: 28px;
+    }
+    #itemcontent ul li:nth-child(n+11) {
+        padding-bottom: 90px;
+    }
+    #itemcontent ul li img {
+        width: 167px;
+        height: 167px;
+        padding-bottom: 11px;
+    }
+    #itemcontent .page {
+        padding-bottom: 58px;
+        transform: none;
+    }
+    #footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
